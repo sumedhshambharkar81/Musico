@@ -1,0 +1,219 @@
+.heading {
+  border : 10%;
+  border-color: white;
+
+}
+
+.heading img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  background: #555;
+  margin-right: 40px;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+.heading h1{
+  background: -webkit-linear-gradient(#ff3300, #78ffd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-size: 50px;
+  margin-top: 23px;
+
+}
+
+
+
+.heading button{
+	background-color: #0066ff; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left:  40px;
+  position: absolute;
+  margin-top: -80px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 7px #999;
+}
+  .heading button:hover {background-color: #ff3300}
+  .heading button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+ }
+
+.container{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+
+ .category{
+  background-color: #eaafc8;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 560px;
+  top: :10%;
+ }
+
+.category h1{
+  background: -webkit-linear-gradient( #c31432, #240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+	font-size: 60px;
+	align-items: center;
+	margin-left: 450px;
+	margin-top: -280px;
+}
+
+.category h2{
+  background: -webkit-linear-gradient( #c31432, #240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+}
+
+.category p{
+  background: -webkit-linear-gradient( #c31432, #240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+}
+.category img{
+	width: 250px;
+	height: 250px;
+
+}
+
+
+body{
+	padding: 0;
+	margin: 0;
+	background-color: floaralwhite;
+}
+
+.slider-frame{
+	overflow: hidden;
+	height: 800px;
+	width: 1349px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+}
+
+@-webkit-keyframes slide_animation{
+	0%{left: 0px;}
+	10%{left: 0px;}
+	20%{left: 1200px;}
+	30%{left: 1200px;}
+	40%{left: 2400px;}
+	50%{left: 2400px;}
+	60%{left: 1200px;}
+	70%{left: 1200px;}
+	80%{left: 0px;}
+	90%{left: 0px;}
+	100%{left: 0px;}
+}
+
+.slide-images{
+	width: 3600px;
+	height: 800px;
+	margin: 0 0 0 -2400px; 
+	position: relative;
+	-webkit-animation-name : slide_animation;
+	-webkit-animation-duration : 33s;
+	-webkit-animation-iteration-count : infinite;
+	-webkit-animation-direction :alternate;
+	-webkit-animation-play-state : running;
+}
+
+.img-container{
+	height: 800px;
+	width: 1200px;
+	position: relative;
+	float: left;
+
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+}
+
+.footer a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+
+
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav  img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  background: #555;
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-top: 17px;
+}
+.topnav h1{
+  background: -webkit-linear-gradient(#ff3300, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.bolly h1{
+	padding: 10px;
+	font-size: 45px;
+	text-align: center;
+	background-color: lightblue;
+}
+
+

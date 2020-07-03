@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+    <title>Punjabi</title>
+
+<style type="text/css">
+
+  *{margin: 0px; padding: 0px;}
+
+  .topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav  img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  background: #555;
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-top: 17px;
+}
+.topnav h1{
+  background: -webkit-linear-gradient(#ff3300, #78ffd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.bolly h1{
+  color: #F37335;
+  padding: 10px;
+  font-size: 45px;
+  text-align: center;
+}
+
+      .col-md-3 {
+                float: left;
+                width: 24%;
+                padding: 5px;
+                margin-left: 1px;
+              }
+      .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                  }
+
+      .main{
+        padding: 40px 0;
+      }            
+
+        .col-md-3{
+          margin-bottom: 40px;
+        }
+
+        .album-poster{
+          position: relative;
+          display: block;
+          border-radius: 7px;
+          overflow: hidden;
+          box-shadow: 0 15px 35px #3d2173a1;
+          transition: all ease 0.4s;
+        }
+
+        .album-poster:hover{
+          box-shadow: none;
+          transform: scale(0.98) translate(5px);
+        }
+
+        h3{
+          font-size: 34px;
+          margin-bottom: 34px;
+          border-bottom: 4px solid #e6e6e6;
+          padding-bottom: 15px;
+        }
+
+        h4{
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-top: 15px;
+          font-weight: 700;
+        }
+
+        .album-poster img{
+          align-items: center;
+          margin-left: 50px;
+          margin-top: 5px;
+          border-radius: 7px;
+          width: 70%; 
+        }
+
+        /*default is hide music player*/
+        #aplayer{
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          margin: 0;
+          box-shadow: 0 -2px 2px #dadada;
+          background-color: #fff;
+          transition: all ease 0.5s;
+        }
+
+        #aplayer.showPlayer{
+          bottom: 0;
+        }
+        /*Music player customizing style*/
+        span{
+          color: #000 !important;
+          font-size: 16px;
+        }
+        .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+          background: #e0e0e0;
+          height: 4px;
+        }     
+        .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+          height: 4px;
+          background-color: #2196F3 !important;
+        }
+        .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+          background-color: #2196F3 !important;
+        }
+
+    </style>
+
+
+  </head>
+  <body>
+      <div class="topnav" style="padding: 15px; background-color:black;">
+  <img src="C:\Users\Sumedh\Documents\New folder\1.png" height="70" width="70" alt="logo">
+    <h1  >Musico</h1>
+    <a class="active" href="music.html" style="margin-left: 700px; margin-top: -60px">Home</a>
+    <a href="#about" style="margin-left: 850px; margin-top: -60px">About</a>
+    <a href="#contact" style="margin-left: 1000px; margin-top: -60px">Contact</a>
+</div>
+<div class="bolly">
+  <h1>Punjabi Melodies</h1>
+</div>
+
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-3">
+            <a href="javascript:void()" class="album-poster" data-switch="0"><img src="poster9.jpg" alt="" ></a>
+            <h4>Allah Ve</h4>
+          </div>
+
+          <div class="col-md-3">
+            <a href="javascript:void()" class="album-poster" data-switch="1"><img src="poster10.jpg" alt=""></a>
+            <h4>Sakhiyaan</h4>
+          </div>
+           
+          <div class="col-md-3">
+            <a href="javascript:void()" class="album-poster" data-switch="2"><img src="poster11.jpg" alt="" ></a>
+            <h4>Naah</h4>
+          </div>
+          
+          <div class="col-md-3">
+            <a href="javascript:void()" class="album-poster" data-switch="3"><img src="poster12.jpg" alt="" ></a>
+            <h4>Yaar Mod Do</h4>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+
+
+    <div id="aplayer"></div>
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
+    <script>
+
+      $(".album-poster").on('click',function(e){
+        var dataSwitchId = $(this).attr('data-switch');
+        console.log(dataSwitchId);
+
+        //aplayer switch function
+        ap.list.switch(dataSwitchId);
+
+        //aplayer play function
+        ap.play();
+        $("#aplayer").addClass('showPlayer');
+
+      });
+
+      const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed : true,
+      listFolded: true, 
+      audio: [
+      {
+        name: 'Allah Ve',
+        artist: 'Jessie Gill',
+        url: 'Allah Ve.mp3',
+        cover: 'poster9.jpg'
+      },
+      {
+        name: 'Sakhiyaan',
+        artist: 'Manindar Buttar',
+        url: 'Sakhiyaan.mp3',
+        cover: 'poster10.jpg'
+      },{
+        name: 'Naah',
+        artist: 'Hardy Sandhu',
+        url: 'Naah.mp3',
+        cover: 'poster11.jpg'
+      },{
+        name: 'Yaar Mod Do',
+        artist: 'Guru Randhwa, Milind Gaba',
+        url: 'Yaar Mod Do.mp3',
+        cover: 'poster12.jpg'
+      }
+      ]
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
